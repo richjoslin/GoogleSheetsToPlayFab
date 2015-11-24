@@ -14,6 +14,9 @@
             Description
 */
 
+// CHANGE THIS VARIABLE:
+var catalogVersion = "PreAlpha2";
+
 function onOpen()
 {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
@@ -51,7 +54,7 @@ function exportCatalog(e)
       var catalogItem = {};
       catalogItem["ItemId"]         = rows[rowIndex][keys.indexOf("ItemId")];
       catalogItem["ItemClass"]      = rows[rowIndex][keys.indexOf("ItemClass")];
-      catalogItem["CatalogVersion"] = rows[rowIndex][keys.indexOf("CatalogVersion")];
+      catalogItem["CatalogVersion"] = rows[rowIndex][keys.indexOf("CatalogVersion")]; // TODO: conditionally exclude if not meant for this catalog version
       catalogItem["DisplayName"]    = rows[rowIndex][keys.indexOf("DisplayName")];
       catalogItem["Description"]    = rows[rowIndex][keys.indexOf("Description")];
 
@@ -66,7 +69,7 @@ function exportCatalog(e)
   }
 
   var wrapper = {
-    "CatalogVersion": "PreAlpha2",
+    "CatalogVersion": catalogVersion,
     "Catalog": catalogItems
   };
 
