@@ -8,7 +8,9 @@ To use it with your Google Sheet:
 * Change the value of the catalogVersion variable to match your desired PlayFab catalog version name.
 * Select the menu item File > Save. Give the script project a name and click OK.
 * After reloading the spreadsheet, you'll see a PlayFab menu item in the menu bar.
-* Make sure you have the catalog sheet selected when you run the function.
+* Make sure you have the catalog sheet selected and then run the function from the menu item.
+* Copy the text that is displayed, and save it in a text file.
+* Use your PlayFab Game Manager to upload the file to add/overwrite your catalog.
 
 See Google Apps Script documentation for more info about extending and customizing this script:
 https://developers.google.com/apps-script/guides/sheets/functions
