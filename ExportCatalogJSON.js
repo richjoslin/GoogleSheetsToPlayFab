@@ -10,17 +10,26 @@
             CatalogVersion
             DisplayName
             Description
+    - Optionally you may include the following columns (note: the contents of these cells are sensitive, see examples)
+            CustomData              -- An object with Key-Values Ex: { "UsableInCombat": false, "Str" : 5 }
+            IsTradable              -- Boolean Ex: true or false
+            IsStackable             -- Boolean Ex: true or false
+            Tags                    -- An array of strings Ex: ["Melee", "Dagger"]
+            VirtualCurrencyPrices   -- An object with Key-Values Ex: { "Gm": 5, "Go" : 100 }
+            UsageCount              -- A number; NaNs and negative values will be converted to null
 */
 
 // CHANGE THIS VARIABLE:
-var catalogVersion = "PreAlpha2"; //alternativly can use the sheet / tab name as the catalog name. I use sheet.getName() in the code below
+//var catalogVersion = "PreAlpha2"; //alternativly can use the sheet / tab name as the catalog name. I use sheet.getName() in the code below
 
 
 function onOpen()
 {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var menuEntries = [
-    { name: "Export Sheet as Catalog JSON", functionName: "exportCatalog" },
+    { 
+      name: "Export Sheet as Catalog JSON", functionName: "exportCatalog" 
+    },
   ];
   ss.addMenu("PlayFab", menuEntries);
 }
