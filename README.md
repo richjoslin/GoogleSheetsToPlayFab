@@ -4,6 +4,7 @@ This is a JavaScript that runs in Google Sheets to export a spreadsheet to a Pla
 To use it with your Google Sheet:
 * Create or open a sheet in Google Sheets
 * The first row of the sheet should contain column names. You can have as many arbitrary columns as you like, but only the columns that match column names in the export script will be included in the exported JSON (currently: ItemId, ItemClass, CatalogVersion, DisplayName, Description).
+* Freeze the first row View > Freeze > 1 row
 * Select the menu item Tools > Script editor. If you are presented with a welcome screen, click Blank Project on the left to start a new project.
 * Replace the code in the script editor with the code from ExportCatalogJSON.js included here.
 * Change the value of the catalogVersion variable to match your desired PlayFab catalog version name.
