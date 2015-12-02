@@ -89,11 +89,7 @@ function exportCatalog(e)
       
       // bundles & containers would best be edited and upated after uploading to game manager
       
-      // conditionally exclude if not meant for this catalog version
-      if(catalogItem["CatalogVersion"] === sheet.getName())
-      {
-        catalogItems.push(catalogItem);
-      }
+      catalogItems.push(catalogItem);
     }
   }
 
