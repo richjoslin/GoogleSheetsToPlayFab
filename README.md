@@ -14,5 +14,7 @@ To use it with your Google Sheet:
 * Copy the text that is displayed, and save it in a text file.
 * Use your PlayFab Game Manager to upload the file to add/overwrite your catalog.
 
+For example catalog values see the ExampleCatalog.csv
+
 See Google Apps Script documentation for more info about extending and customizing this script:
 https://developers.google.com/apps-script/guides/sheets/functions
