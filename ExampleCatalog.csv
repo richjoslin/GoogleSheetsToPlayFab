@@ -1,0 +1,7 @@
+ItemId,ItemClass,CatalogVersion,DisplayName,Description,IsStackable,IsTradable,Tags,VirtualCurrencyPrices,CustomData,UsageCount
+rubber_ball,Junk,ExampleCatalog,Rubber Ball,Advanced Polymer Construction. How high will it go?,TRUE,FALSE,"[""red""]","{ ""Go"" : 100 }",,3
+health_potion,Potion,ExampleCatalog,Health Potion,Drink Me and restores 25% HP.,TRUE,FALSE,,"{ ""Go"" : 500 }","{ ""icon"" : ""redPotion"", ""restoreAmt"" : ""25"" }",1
+magic_key,Key,ExampleCatalog,Magic Key,Can be used repeatedly to open level 1 chests.,FALSE,TRUE,"[""quest_reward""]",,"{ ""icon"" : ""crystalKey"", ""level"" : 1 }",0
+sword_steel,Weapon,ExampleCatalog,Steel Sword,Forged by your local smith.,FALSE,FALSE,"[""melee""]","{ ""Go"" : 1500, ""Gm"" : 5 }","{ ""icon"" : ""sword_01"", ""dmg"" : 15 }",0
+bow_cursed,Weapon,ExampleCatalog,Magic Bow,An ancient bow plagued with dark magic.,FALSE,FALSE,"[""cursed"", ""ranged""]","{ ""Go"" : 4500, ""Gm"" : 15 }","{ ""icon"" : ""bow_09"", ""dmg"" : 155 }",0
+dwarven_stout,Food,ExampleCatalog,Dwarven Stout,"A stout brew, crafted high in the mountains.",TRUE,FALSE,"[""alcohol""]","{ ""Go"" : 10 }","{ ""icon"" : ""beer_dark"", ""abv"" : ""9.7%"", ""ibu"" : 33 }",6
