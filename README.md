@@ -1,4 +1,7 @@
 # GoogleSheetsToPlayFab
+
+## IMPORTANT: as of 2016 this project is outdated and no longer supported, sorry!
+
 This is a JavaScript function that runs in Google Sheets to export the active spreadsheet to a PlayFab Catalog  JSON structure. This JSON can be saved locally and uploaded through PlayFab's Game Manager.
 
 To use it with your Google Sheet:
